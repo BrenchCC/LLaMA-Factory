@@ -8,7 +8,8 @@ finetuning_type: full
 deepspeed: examples/deepspeed/ds_z3_config.json
 
 ### dataset
-dataset: indentity
+dataset: argilla_magpie_classified,armorm-dpo-classified,Finetome_100k_classified
+dataset_dir: /mnt/bn/brench-training-test/qwen2.5-1.5b-data
 template: qwen
 cutoff_len: 32768
 max_samples: 5000000
@@ -19,7 +20,7 @@ preprocessing_num_workers: 16
 ### output
 output_dir: /mnt/bn/brench-training-test/qwen2_models_saves/qwen2.5-1.5b-math-code/full/sft/v1
 logging_steps: 1
-save_steps: 1000
+save_steps: 500
 plot_loss: true
 overwrite_output_dir: true
 report_to: wandb
