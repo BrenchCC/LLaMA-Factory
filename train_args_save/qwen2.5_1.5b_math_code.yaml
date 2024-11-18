@@ -9,7 +9,7 @@ deepspeed: examples/deepspeed/ds_z3_config.json
 
 ### dataset
 dataset: indentity
-template: qwen2
+template: qwen
 cutoff_len: 32768
 max_samples: 5000000
 overwrite_cache: true
