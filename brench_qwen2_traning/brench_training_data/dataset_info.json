@@ -8,7 +8,7 @@
             "system":"system"
         }
     },
-    " CN-R1-Distill-110K-Without-Tag":{
+    "CN-R1-Distill-110K-Without-Tag":{
         "file_name":"CN-R1-Distill-110K-Without-Tag/data/train-00000-of-00001.parquet",
         "formatting":"alpaca",
         "columns":{
@@ -17,8 +17,8 @@
             "system":"system"
         }
     },
-    " CN-R1-Distill-110K":{
-        "file_name":"CN-R1-Distill-110K-Without-Tag/data/train-00000-of-00001.parquet",
+    "CN-R1-Distill-110K":{
+        "file_name":"CN-R1-Distill-110K/data/train-00000-of-00001.parquet",
         "formatting":"alpaca",
         "columns":{
             "prompt":"instruction",
