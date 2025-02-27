@@ -8,6 +8,33 @@
             "system":"system"
         }
     },
+    " CN-R1-Distill-110K-Without-Tag":{
+        "file_name":"CN-R1-Distill-110K-Without-Tag/data/train-00000-of-00001.parquet",
+        "formatting":"alpaca",
+        "columns":{
+            "prompt":"input",
+            "response":"output",
+            "system":"system"
+        }
+    },
+    " CN-R1-Distill-110K":{
+        "file_name":"CN-R1-Distill-110K-Without-Tag/data/train-00000-of-00001.parquet",
+        "formatting":"alpaca",
+        "columns":{
+            "prompt":"instruction",
+            "response":"output",
+            "system":"system"
+        }
+    },
+    "MMLU-Pro-CoT-Train-43K":{
+        "file_name":"MMLU-Pro-CoT-Train-43K/data/train-00000-of-00001.parquet",
+        "formatting":"alpaca",
+        "columns":{
+            "prompt":"question",
+            "response":"chain_of_thoughts",
+            "system":"system"
+        }
+    },
     "Thinking-Abstract-Math-R1-Distill-94K":{
         "file_name":"Thinking-Abstract-Math-R1-Distill-94K/data/train-00000-of-00001.parquet",
         "formatting":"alpaca",
