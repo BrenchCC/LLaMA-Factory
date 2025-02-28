@@ -11,7 +11,7 @@ deepspeed: brench_qwen2_training/brench_training_args/deepspeed_args/ds_z3_confi
 
 ### dataset
 dataset: Numina-Math-R1-COT-172K,Thinking-Abstract-Math-R1-Distill-94K,GSM8K-CN-R1-Distill-6K
-dataset_dir: brench_training_data
+dataset_dir: brench_qwen2_training/brench_training_data
 template: qwen
 overwrite_cache: false
 preprocessing_num_workers: 64
