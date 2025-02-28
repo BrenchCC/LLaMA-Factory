@@ -12,5 +12,4 @@ Here is the [Chinese Guidance]('README_zh.md')
 
 - General Model for communicate and classify problem 
   - General World Data SFT - ability of general knowledge
-  
   - R1 Distilled General World Data SFT - ability of general knowledge without ```<think>``` tag
