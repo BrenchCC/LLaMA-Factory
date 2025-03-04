@@ -1,0 +1,39 @@
+### model
+model_name_or_path: brench_qwen2_training/base_models_ckpt/Qwen2-1.5B-Instruct
+# resume_from_checkpoint:
+trust_remote_code: true
+
+### method
+stage: sft
+do_train: true
+finetuning_type: full
+deepspeed: brench_qwen2_training/brench_training_args/deepspeed_args/ds_z3_config.json  
+
+### dataset
+#dataset: CN-R1-Distill-110K,Numina-Math-R1-COT-1.6M-P0,Numina-Math-R1-Distill-AIME
+dataset: CN-R1-Distill-110K,Numina-Math-R1-Distill-AIME,MetaMathQA-R1-Distill-395K
+dataset_dir: brench_qwen2_training/brench_training_data
+template: qwen
+overwrite_cache: true
+preprocessing_num_workers: 64
+
+### output
+output_dir: brench_qwen2_training/brench_training_saves/qwen2-1.5b-r1-distill-v3/full/sft
+logging_steps: 1
+save_steps: 1000
+save_total_limit: 4
+plot_loss: true
+overwrite_output_dir: false
+
+### train
+per_device_train_batch_size: 4
+gradient_accumulation_steps: 2
+flash_attn: fa2
+learning_rate: 2.0e-5
+num_train_epochs: 1.0
+lr_scheduler_type: cosine
+warmup_ratio: 0.1
+bf16: true
+ddp_timeout: 180000000
+report_to: wandb
+run_name: qwen2-1.5b-r1-distill-v3
