@@ -53,102 +53,40 @@
             "system":"system"
         }
     },
-    "Numina-Math-R1-COT-1.6M-P0":{
-        "file_name":"Numina-Math-R1-COT-1.6M/data/train-00000-of-00007.parquet",
-        "formatting":"sharegpt",
+    "Numina-Math-R1-Distill-AIME":{
+        "file_name":"Numina-Math-R1-Distill-AIME/data/train-00000-of-00001.parquet",
+        "formatting":"alpaca",
         "columns":{
-            "messages":"reannotated_messages"
-        },
-        "tags":{
-            "role_tag":"role",
-            "content_tag":"content",
-            "user_tag":"user",
-            "assistant_tag":"assistant",
-            "system_tag":"system"
+            "prompt":"problem",
+            "response":"response_content",
+            "system":"system"
         }
     },
-    "Numina-Math-R1-COT-1.6M-P1":{
-        "file_name":"Numina-Math-R1-COT-1.6M/data/train-00001-of-00007.parquet",
-        "formatting":"sharegpt",
+    "MetaMathQA-R1-Distill-395K":{
+        "file_name":"MetaMathQA-R1-Distill-395K/data/train-00000-of-00001.parquet",
+        "formatting":"alpaca",
         "columns":{
-            "messages":"reannotated_messages"
-        },
-        "tags":{
-            "role_tag":"role",
-            "content_tag":"content",
-            "user_tag":"user",
-            "assistant_tag":"assistant",
-            "system_tag":"system"
+            "prompt":"prompt",
+            "response":"response",
+            "system":"system"
         }
     },
-    "Numina-Math-R1-COT-1.6M-P2":{
-        "file_name":"Numina-Math-R1-COT-1.6M/data/train-00002-of-00007.parquet",
-        "formatting":"sharegpt",
+    "GeneralThought-123K":{
+        "file_name":"GeneralThought-123K/data/train-00000-of-00001.parquet",
+        "formatting":"alpaca",
         "columns":{
-            "messages":"reannotated_messages"
-        },
-        "tags":{
-            "role_tag":"role",
-            "content_tag":"content",
-            "user_tag":"user",
-            "assistant_tag":"assistant",
-            "system_tag":"system"
+            "prompt":"question",
+            "response":"response",
+            "system":"system"
         }
     },
-    "Numina-Math-R1-COT-1.6M-P3":{
-        "file_name":"Numina-Math-R1-COT-1.6M/data/train-00003-of-00007.parquet",
-        "formatting":"sharegpt",
-        "columns":{
-            "messages":"reannotated_messages"
-        },
-        "tags":{
-            "role_tag":"role",
-            "content_tag":"content",
-            "user_tag":"user",
-            "assistant_tag":"assistant",
-            "system_tag":"system"
+    "OpenR1-Math-93K": {
+        "file_name": "OpenR1-Math-93K/data/train-00000-of-00001.parquet",
+        "fomatting": "alpaca",
+        "columns": {
+            "prompt": "problem",
+            "response": "response",
+            "system": "system"
         }
-    },
-    "Numina-Math-R1-COT-1.6M-P4":{
-        "file_name":"Numina-Math-R1-COT-1.6M/data/train-00004-of-00007.parquet",
-        "formatting":"sharegpt",
-        "columns":{
-            "messages":"reannotated_messages"
-        },
-        "tags":{
-            "role_tag":"role",
-            "content_tag":"content",
-            "user_tag":"user",
-            "assistant_tag":"assistant",
-            "system_tag":"system"
-        }
-    },  
-    "Numina-Math-R1-COT-1.6M-P5":{
-        "file_name":"Numina-Math-R1-COT-1.6M/data/train-00005-of-00007.parquet",
-        "formatting":"sharegpt",
-        "columns":{
-            "messages":"reannotated_messages"
-        },
-        "tags":{
-            "role_tag":"role",
-            "content_tag":"content",
-            "user_tag":"user",
-            "assistant_tag":"assistant",
-            "system_tag":"system"
-        }
-    },  
-    "Numina-Math-R1-COT-1.6M-P6":{
-        "file_name":"Numina-Math-R1-COT-1.6M/data/train-00006-of-00007.parquet",
-        "formatting":"sharegpt",
-        "columns":{
-            "messages":"reannotated_messages"
-        },
-        "tags":{
-            "role_tag":"role",
-            "content_tag":"content",
-            "user_tag":"user",
-            "assistant_tag":"assistant",
-            "system_tag":"system"
-        }
-    }   
+    }
 }
