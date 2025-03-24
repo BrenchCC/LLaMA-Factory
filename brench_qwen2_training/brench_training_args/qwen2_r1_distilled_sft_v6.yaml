@@ -1,0 +1,38 @@
+### model
+model_name_or_path: /mnt/bn/brench-volume-lq1/graduation_design/LLaMA-Factory/brench_qwen2_training/base_models_ckpt/Qwen2.5-1.5B-Instruct
+# resume_from_checkpoint:
+trust_remote_code: true
+
+### method
+stage: sft
+do_train: true
+finetuning_type: full
+deepspeed: brench_qwen2_training/brench_training_args/deepspeed_args/ds_z3_config.json  
+
+### dataset
+dataset: OpenR1-Math-93K,Numina-Math-R1-Distill-AIME,R1-Distill-MultiMath-76K,GSM8K-CN-R1-Distill-6K
+dataset_dir: brench_qwen2_training/brench_training_data
+template: qwen
+overwrite_cache: false
+preprocessing_num_workers: 64
+
+### output
+output_dir: brench_qwen2_training/brench_training_saves/qwen2-1.5b-r1-distill-v7/full/sft
+logging_steps: 1
+save_steps: 1000
+# save_total_limit: 5
+plot_loss: true
+overwrite_output_dir: false
+
+### train
+per_device_train_batch_size: 4
+gradient_accumulation_steps: 2
+flash_attn: fa2
+learning_rate: 1.0e-5
+num_train_epochs: 2.0
+lr_scheduler_type: cosine
+warmup_ratio: 0.1
+bf16: true
+ddp_timeout: 180000000
+report_to: wandb
+run_name: qwen2-1.5b-r1-distill-v7
