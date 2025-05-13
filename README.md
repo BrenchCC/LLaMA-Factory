@@ -13,3 +13,7 @@ Here is the [Chinese Guidance]('README_zh.md')
 - General Model for communicate and classify problem 
   - General World Data SFT - ability of general knowledge
   - R1 Distilled General World Data SFT - ability of general knowledge without ```<think>``` tag
+ 
+
+## Scripts
+```llamafactory-cli train brench_qwen2_training/brench_training_args/qwen2_r1_distilled_sft_v1.yaml```
